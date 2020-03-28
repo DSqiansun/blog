@@ -4,5 +4,5 @@ Title: Does not matter.
 Version: 0.0.1
 Imports: blogdown
 Remotes: rstudio/blogdown
-URL: https://github.com/DSqiansun/DSqiansun.github.io
-BugReports: https://github.com/DSqiansun/DSqiansun.github.io/issues
+URL: https://github.com/DSqiansun/blog
+BugReports: https://github.com/DSqiansun/blog/issues
