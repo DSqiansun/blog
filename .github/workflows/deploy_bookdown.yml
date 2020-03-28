@@ -19,11 +19,11 @@ jobs:
       - name: Install hugo
         run: Rscript -e 'blogdown::install_hugo()'
       - name: Render Book
-        run: Rscript -e 'blogdown::build_site()'
+        run: Rscript -e "blogdown::build_site(local = FALSE, method = c('html', 'custom'),run_hugo = TRUE)"
       - uses: actions/upload-artifact@v1
         with:
-          name: _public
-          path: _public/
+          name: public
+          path: public/
   
 # Need to first create an empty gh-pages branch
 # see https://pkgdown.r-lib.org/reference/deploy_site_github.html
@@ -39,12 +39,12 @@ jobs:
        uses: actions/download-artifact@v1.0.0
        with:
          # Artifact name
-         name: _public # optional
+         name: public # optional
          # Destination path
-         path: _public # optional
+         path: public # optional
      - name: Deploy to GitHub Pages
        uses: DSqiansun.github.io/DSqiansun.github.io@master
        env:
           EMAIL: ${{ secrets.EMAIL }}               # must be a verified email
           GH_TOKEN: ${{ secrets.GITHUB_PAT }} # https://github.com/settings/tokens
-          BUILD_DIR: _book/                     # "_site/" by default
+          BUILD_DIR: public/                     # "_site/" by default
