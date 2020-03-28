@@ -43,7 +43,7 @@ jobs:
          # Destination path
          path: public # optional
      - name: Deploy to GitHub Pages
-       uses: DSqiansun.github.io/DSqiansun.github.io@master
+       uses: DSqiansun/DSqiansun.github.io@master
        env:
           EMAIL: ${{ secrets.EMAIL }}               # must be a verified email
           GH_TOKEN: ${{ secrets.GITHUB_PAT }} # https://github.com/settings/tokens
