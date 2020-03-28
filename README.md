@@ -5,5 +5,5 @@ The style is based on Yihui Xie's template(https://yihui.org/).
 The website is built via the R package [**blogdown**](https://github.com/rstudio/blogdown).
 
 <!-- badges: start -->
-[![R build status](https://github.com/DSqiansun/DSqiansun.github.io/workflows/R-CMD-check/badge.svg)](https://github.com/DSqiansun/DSqiansun.github.io/actions)
+[![R build status](https://github.com/DSqiansun/QianBlog/workflows/R-CMD-check/badge.svg)](https://github.com/DSqiansun/QianBlog/actions)
 <!-- badges: end -->
