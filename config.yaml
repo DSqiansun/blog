@@ -1,4 +1,4 @@
-baseurl: "https://dsqiansun.github.io/QianBlog/"
+baseurl: "https://dsqiansun.github.io/blog/"
 languageCode: "en-us"
 title: "Qian SUN | 孙潜"
 theme: "hugo-ivy"
@@ -104,12 +104,7 @@ params:
     cn: "孙潜"
     
   lang:
-    edit:
-      cn: "编辑"
-    license:
-      cn: "版权"
-    subscribe:
-      cn: "订阅"
+
 
 blackfriday:
     extensionsmask: ["noIntraEmphasis"]

@@ -8,3 +8,6 @@ The style is based on Yihui Xie's template(https://yihui.org/).
 The website is built via the R package [**blogdown**](https://github.com/rstudio/blogdown).
 
 
+# Doc:
+[Github Actions for R](https://ropenscilabs.github.io/actions_sandbox/packageci.html)
+[GH Pages deploy](https://github.com/marketplace/actions/gh-pages-deploy)
