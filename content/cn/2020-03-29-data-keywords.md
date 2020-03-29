@@ -22,7 +22,7 @@ tags:
 
 - 这些结果将呈报给决策者，以支持策略性的决策和定义组织绩效，或者融入智能知识库自动向客户推送。
 
-![](/images/Data Warehouse.webp)
+![](../../../../images/Data Warehouse.webp)
 
 ![](/cn/2020-03-29-data-keywords_files/ETLvsELT.jpg)
 
