@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ETL on Qian SUN | 孙潜</title>
+    <link>https://dsqiansun.github.io/blog/tags/etl/</link>
+    <description>Recent content in ETL on Qian SUN | 孙潜</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 29 Mar 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://dsqiansun.github.io/blog/tags/etl/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Data Pipeline - ETL vs ELT</title>
+      <link>https://dsqiansun.github.io/blog/cn/2020/03/data-pipeline-etl/</link>
+      <pubDate>Sun, 29 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://dsqiansun.github.io/blog/cn/2020/03/data-pipeline-etl/</guid>
+      <description>介绍 ETL，Extraction-Transformation-Loading的缩写，中文名为数据抽取、转换和加载。 ELT，Extracti</description>
+    </item>
+    
+  </channel>
+</rss>

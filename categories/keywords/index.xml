@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>keywords on Qian SUN | 孙潜</title>
+    <link>https://dsqiansun.github.io/blog/categories/keywords/</link>
+    <description>Recent content in keywords on Qian SUN | 孙潜</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 29 Mar 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://dsqiansun.github.io/blog/categories/keywords/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Data Keywords</title>
+      <link>https://dsqiansun.github.io/blog/cn/2020/03/data-keywords/</link>
+      <pubDate>Sun, 29 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://dsqiansun.github.io/blog/cn/2020/03/data-keywords/</guid>
+      <description>这章主要目的是解释一些行业内专用词 S 商务智能 BI 商务智能（BI，Business Intelligence）是一种以提供决策分析性的运营数据为目</description>
+    </item>
+    
+  </channel>
+</rss>

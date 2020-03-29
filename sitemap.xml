@@ -3,6 +3,61 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://dsqiansun.github.io/blog/categories/</loc>
+    <lastmod>2020-03-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dsqiansun.github.io/blog/tags/data/</loc>
+    <lastmod>2020-03-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dsqiansun.github.io/blog/tags/data-engineering/</loc>
+    <lastmod>2020-03-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dsqiansun.github.io/blog/categories/data-engineering/</loc>
+    <lastmod>2020-03-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dsqiansun.github.io/blog/cn/2020/03/data-keywords/</loc>
+    <lastmod>2020-03-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dsqiansun.github.io/blog/cn/2020/03/data-pipeline-etl/</loc>
+    <lastmod>2020-03-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dsqiansun.github.io/blog/categories/data-science/</loc>
+    <lastmod>2020-03-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dsqiansun.github.io/blog/tags/etl/</loc>
+    <lastmod>2020-03-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dsqiansun.github.io/blog/categories/keywords/</loc>
+    <lastmod>2020-03-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dsqiansun.github.io/blog/tags/</loc>
+    <lastmod>2020-03-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dsqiansun.github.io/blog/tags/workflow/</loc>
+    <lastmod>2020-03-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://dsqiansun.github.io/blog/</loc>
     <lastmod>2020-03-28T00:00:00+00:00</lastmod>
   </url>
@@ -27,15 +82,7 @@
   </url>
   
   <url>
-    <loc>https://dsqiansun.github.io/blog/categories/</loc>
-  </url>
-  
-  <url>
     <loc>https://dsqiansun.github.io/blog/en/vitae/</loc>
-  </url>
-  
-  <url>
-    <loc>https://dsqiansun.github.io/blog/tags/</loc>
   </url>
   
   <url>
