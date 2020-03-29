@@ -21,8 +21,8 @@ tags:
 - 用户则通过报表、图表、多维度分析的方式，寻找解决业务问题所需要的方案；
 
 - 这些结果将呈报给决策者，以支持策略性的决策和定义组织绩效，或者融入智能知识库自动向客户推送。
-
-![](/cn/2020-03-29-data-keywords_files/Data Warehouse.webp)
+![](static/images/Data Warehouse.webp)
+![](static/cn/2020-03-29-data-keywords_files/技术路线对比表.webp)
 ## 数据仓库(Data Warehouse)
 是一个面向主题的（Subject Oriented）、集成的（Integrated）、相对稳定的（Non-Volatile）、反映历史变化的（Time Variant）数据集合，用于支持管理决策和信息的全局共享。其主要功能是将组织透过资讯系统之联机事务处理(OLTP)经年累月所累积的大量资料，透过数据仓库理论所特有的资料储存架构，作一有系统的分析整理，以利各种分析方法如联机分析处理(OLAP)、数据挖掘(Data Mining)之进行，并进而支持如决策支持系统(DSS)、主管资讯系统(EIS)之创建，帮助决策者能快速有效的自大量资料中，分析出有价值的资讯，以利决策拟定及快速回应外在环境变动，帮助建构商业智能(BI)。引自全球数据仓库之父 W.H.Inmon。  
 
