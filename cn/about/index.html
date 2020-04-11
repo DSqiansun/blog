@@ -15,6 +15,17 @@
 
     
       
+      <meta property="description" content="我是孙潜。 去过很多地方，遇到过很多人，做过很多工作。
+喜欢学习新的东西，认识新的朋友，即使不是很擅长社交。
+[&amp;hellip;] 目前是一名数据科学家兼程序员在法国安联保险公司。
+在此之前，在ENGIE(前苏伊士环能), IBM, CNRS（法国国家科学研究院）工作过，而后在Meritis做过咨询,再之后加入过创业公司Amuse Network。
+[&amp;hellip;] 法国国立高等先进技术学 &amp;hellip;">
+      <meta property="og:description" content="我是孙潜。 去过很多地方，遇到过很多人，做过很多工作。
+喜欢学习新的东西，认识新的朋友，即使不是很擅长社交。
+[&amp;hellip;] 目前是一名数据科学家兼程序员在法国安联保险公司。
+在此之前，在ENGIE(前苏伊士环能), IBM, CNRS（法国国家科学研究院）工作过，而后在Meritis做过咨询,再之后加入过创业公司Amuse Network。
+[&amp;hellip;] 法国国立高等先进技术学 &amp;hellip;">
+      
     
 
     
@@ -24,6 +35,11 @@
 
     
     
+
+
+<link href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css' rel='stylesheet' type='text/css' />
+
+
 
     <link rel="stylesheet" href="/blog/css/style.css" />
     <link rel="stylesheet" href="/blog/css/fonts.css" />
@@ -83,9 +99,77 @@
 
 
 <h1 id="我是谁">我是谁</h1>
+<p>我是孙潜。
+去过很多地方，遇到过很多人，做过很多工作。<br>
+喜欢学习新的东西，认识新的朋友，即使不是很擅长社交。</p>
+<h1 id="履历">履历</h1>
+<p>目前是一名数据科学家兼程序员在法国安联保险公司。</p>
+<p>在此之前，在ENGIE(前苏伊士环能), IBM, CNRS（法国国家科学研究院）工作过，而后在Meritis做过咨询,再之后加入过创业公司Amuse Network。</p>
+<h1 id="学历">学历</h1>
+<p>法国国立高等先进技术学院（ENSTA Bretagne) 通用工程师硕士文凭<br>
+西布列塔尼大学(Université de Bretagne Occidentale)地球物理硕士文凭<br>
+格勒诺布尔阿尔卑斯大学 (Grenoble Alpes University)和格勒诺布尔国立高等计算机与应用数学学校(Ensimag)数据科学硕士文凭。</p>
+<p>曾经在<a href="http://www.xdfce.cn/">北京新东方烹饪学习中炒专业</a>求学，并取得证书</p>
 <h1 id="个人兴趣">个人兴趣</h1>
+<p>喜欢Python, R, 科学计算, 高性能计算, 大数据，人工智能<br>
+喜欢学习新的东西，新的技术。</p>
 <h1 id="写作原则">写作原则</h1>
-<h1 id="本站架构">本站架构</h1>
+<p>尽量记录自己的学习成长经历。</p>
+<h1 id="生活履历">生活履历</h1>
+<pre><code class="language-{r" data-lang="{r">a = data.frame(
+  &quot;Entry_Station_Lat&quot; = c(38.910726, 31.811226,38.416663, 39.9042, 48.00611, 48.390394, 45.764043, 48.390394 ,45.188529,43.610769 ),
+  &quot;Entry_Station_Long&quot; = c(111.846905, 119.974061, 112.734174, 116.407396, 0.199556, -4.486076, 4.835659, -4.486076, 5.724524,3.876716),
+  &quot;Exit_Station_Lat&quot; = c(31.811226,38.416663, 39.9042, 48.00611, 48.390394, 45.764043, 48.390394,45.188529 ,43.610769,48.856614  ),
+  &quot;Exit_Station_Long&quot; = c(119.974061, 112.734174, 116.407396, 0.199556, -4.486076, 4.835659, -4.486076, 5.724524, 3.876716,2.352222),
+  &quot;Exit_Station_city&quot; = c(&quot;常州&quot;, &quot;忻州&quot;, &quot;北京&quot;,  &quot;勒芒&quot;, &quot;布雷斯特&quot;, &quot;里昂&quot;, &quot;布雷斯特&quot;, &quot;格勒诺布尔&quot;, &quot;蒙彼利埃&quot;,&quot;巴黎&quot;)
+)
+a[[&quot;id&quot;]] &lt;- 1:nrow(a)
+
+
+citis &lt;-data.frame(  &quot;Lat&quot; = c(38.910726, 31.811226,38.416663, 39.9042, 48.00611, 48.390394, 45.764043, 48.390394,45.188529 ,43.610769,48.856614  ),
+  &quot;Long&quot; = c(111.846905,119.974061, 112.734174, 116.407396, 0.199556, -4.486076, 4.835659, -4.486076, 5.724524, 3.876716,2.352222),
+  &quot;city&quot; = c(&quot;五寨&quot;, &quot;常州&quot;, &quot;忻州&quot;, &quot;北京&quot;,  &quot;勒芒&quot;, &quot;布雷斯特&quot;, &quot;里昂&quot;, &quot;布雷斯特&quot;, &quot;格勒诺布尔&quot;, &quot;蒙彼利埃&quot;,&quot;巴黎&quot;),
+  &quot;years&quot; = c(8, 5, 3, 3,  0.5, 3, 0.5, 3, 1, 0.5,as.numeric(format(Sys.Date(), &quot;%Y&quot;)) - 2017)
+)
+
+#create some colors
+factpal &lt;- colorFactor(topo.colors(30), a$id)
+
+#create a list of interpolated paths
+pathList = NULL
+for(i in 1:nrow(a))
+{
+tmp = gcIntermediate(c(a$Entry_Station_Long[i],
+                 a$Entry_Station_Lat[i]),
+               c(a$Exit_Station_Long[i],
+                 a$Exit_Station_Lat[i]),n = 25,
+               addStartEnd=TRUE)
+tmp = data.frame(tmp)
+tmp$id = a[i,]$id
+tmp$color = factpal(a[i,]$id)
+pathList = c(pathList,list(tmp))
+}
+
+#create empty base leaflet object
+leaflet(width =&quot;100%&quot;) %&gt;% addTiles() %&gt;% setView(2.352222,48.856614, zoom =5) %&gt;% addMarkers(lng=citis$Long,lat=citis$Lat,  popup = htmlEscape(citis$city)) %&gt;% addCircleMarkers(lng=citis$Long,lat=citis$Lat, radius =citis$years*10, stroke = FALSE, fillOpacity = 0.5) -&gt; lf
+
+#add each entry of pathlist to the leaflet object 
+for (path in pathList)
+{
+  lf %&gt;% addPolylines(data = path,
+                      lng = ~lon, 
+                      lat = ~lat,
+                      color = ~color) -&gt; lf
+
+}
+#show output
+lf
+</code></pre><p> </p>
+<hr />
+<p style="text-align: center;">Contact</a></p>
+<p style="text-align: center;"><span style="color: #808080;"><em>sunqianben@gmail.com</em></span></p>
+<center>[Github](https://github.com/DSqiansun) | [Linkedin](https://www.linkedin.com/in/qian-sun-411829a9)</center>
+<p> </p>
 
 
   <footer>
@@ -160,6 +244,8 @@
 
 
 
+<script async src="//mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1988641-2"></script>
 <script>
@@ -170,6 +256,19 @@
 </script>
 
   
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/tex.min.js"></script>
+<script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+
+
 
   
   <hr>

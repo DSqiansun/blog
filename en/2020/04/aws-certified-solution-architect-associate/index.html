@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Aws Certified Solution Architect Associate - Qian SUN | 孙潜</title>
+    <meta property="og:title" content="Aws Certified Solution Architect Associate - Qian SUN | 孙潜">
+    
+    <meta name="twitter:card" content="summary">
+
+    
+      
+    
+
+    
+      
+      <meta property="description" content="Block Storage:
+[&amp;hellip;] File Storage
+[&amp;hellip;] Object Storage
+[&amp;hellip;] Amazon S3 is a fully managed, object-based storage service that is highly available, highly durable, very cost-effective, &amp;hellip;">
+      <meta property="og:description" content="Block Storage:
+[&amp;hellip;] File Storage
+[&amp;hellip;] Object Storage
+[&amp;hellip;] Amazon S3 is a fully managed, object-based storage service that is highly available, highly durable, very cost-effective, &amp;hellip;">
+      
+    
+
+    
+    
+
+    
+
+    
+    
+
+    <link rel="stylesheet" href="/blog/css/style.css" />
+    <link rel="stylesheet" href="/blog/css/fonts.css" />
+    
+<link rel="stylesheet" href="/blog/css/custom.css" />
+
+  </head>
+
+  
+  <body class="blog">
+    <header class="masthead">
+      
+
+<h1><a href="/blog/"><img src="/blog/images/logo.png" alt="Qian Sun" /></a></h1>
+
+
+
+      <nav class="menu">
+  <ul>
+  
+  
+  <li><a href="/blog/en/about/">About</a></li>
+  
+  <li><a href="/blog/en/">Blog</a></li>
+  
+  <li><a href="/blog/cn/about/">关于</a></li>
+  
+  <li><a href="/blog/cn/">日志</a></li>
+  
+  
+
+<li class="menu-extra"></li>
+
+
+<li><a href="/en/index.xml" type="application/rss+xml" title="RSS feed">Subscribe</a></li>
+
+<li><a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="Attribution-NonCommercial-ShareAlike 4.0 International">License</a></li>
+
+
+  </ul>
+</nav>
+
+    </header>
+
+    <article class="main">
+      <header class="title">
+      
+<h1>Aws Certified Solution Architect Associate</h1>
+
+
+<h3>Qian SUN / 
+2020-04-11</h3>
+
+<hr>
+
+
+      </header>
+
+
+
+<h1 id="考试范围">考试范围:</h1>
+<ul>
+<li>Domain 1 : Design Resilient Architecteures
+<ul>
+<li>AWS Global Infrastructure (Regions, Availavility Zone, Edge Locations, Regional Edge Caches)</li>
+<li>Multi-tiered architecture within a Virtual Private Cloud (VPC)</li>
+<li>Amazon Route 53</li>
+<li>Amazon CloudFront</li>
+<li>Disaster recovery and business continuity strategies</li>
+<li>Decoupled and event-driven architectures</li>
+<li>AWS storage services</li>
+</ul>
+</li>
+<li>Domain 2 : Design High-Performing Architectures
+<ul>
+<li>Auto Scaling and application and network elastic load balancers</li>
+<li>Amazon EC2, ECS and Elastic Beanstalk</li>
+<li>Storage performance with the Elastic File System and Amazon S3 features</li>
+<li>VPC Networking compoonents</li>
+<li>AWS Databases</li>
+<li>Amazon DynamoDB and Aurora</li>
+</ul>
+</li>
+<li>Domain 3 : Design Secure Applications and Architectures
+<ul>
+<li>AWS Identity &amp; Access Management</li>
+<li>Amazon Cognito for web &amp; mobile security</li>
+<li>AWS organizations - Service Control Policies (SCPs)</li>
+<li>Protecting application with AWS WAF; Firewall Manager and Shield</li>
+<li>AWS logging mechanisms</li>
+<li>Audit, monitor and evaluate with AWS Config and AWS CloudTrail</li>
+<li>Data encryption using the AWS Key Management Service(KMS)</li>
+</ul>
+</li>
+<li>Domain 4 : Design Cost-optimized Architectures
+<ul>
+<li>AWS Storage costs across Amazon S3, Glacier, EFS, Storage Gateway, AWS Backup</li>
+<li>Savings plans and reserved instances for compute instances</li>
+</ul>
+</li>
+</ul>
+<h1 id="introduction-to-amazon-ebs-and-ec2-instance-storage">Introduction to Amazon EBS and EC2 Instance Storage</h1>
+<h2 id="aws-storage-services">AWS Storage Services</h2>
+<h3 id="on-premise-storage-options">on-premise storage options</h3>
+<ul>
+<li>Storage Areas Network(SAN)</li>
+<li>Network Attached Storage(NAS)</li>
+<li>Directly Attached Storage(DAS)</li>
+<li>Tape Backup</li>
+</ul>
+<h3 id="aws-data-storage-categorization">AWS Data Storage categorization</h3>
+<ul>
+<li>
+<p>Block Storage:</p>
+<ul>
+<li>Data is stored in chunks known as blocks</li>
+<li>Blocks are stored on a volume and attached to a signle instance</li>
+<li>Provide very low latency</li>
+<li>Comparable to DAS storage used on premises</li>
+</ul>
+</li>
+<li>
+<p>File Storage</p>
+<ul>
+<li>Data is stored as separate files with a series of directories</li>
+<li>Data is stored within a file system</li>
+<li>Shared access is provided for multple users</li>
+<li>Comparable to NAS storage used on premises</li>
+</ul>
+</li>
+<li>
+<p>Object Storage</p>
+<ul>
+<li>Objects are stored across a flat address space</li>
+<li>Objects are referenced by a unique key</li>
+<li>Each object can also have associated metadata to help categorize and identify the object</li>
+</ul>
+</li>
+</ul>
+<h3 id="amazon-ebs-elastic-block-store">Amazon EBS (Elastic Block Store)</h3>
+<ul>
+<li>Provided Block level storage to EC2 instances</li>
+<li>Offers persistent and durable data storage</li>
+<li>Greater flexibility than that of instance store volumes</li>
+<li>EBS can be attached to EC2</li>
+<li>Multiple EBS cans be attached to a single EC2 instance</li>
+<li>EBS Snapshots
+<ul>
+<li>Manual</li>
+<li>Automatically scheduled</li>
+</ul>
+</li>
+<li>High Availability
+<ul>
+<li>replicated multiple time within the sale availability zone</li>
+</ul>
+</li>
+<li>Volume Types:
+<ul>
+<li>SSD (Solid State Drive)
+<ul>
+<li>Suited for work with smaller blocks</li>
+<li>Databases using transactional workloads</li>
+<li>often used for boot volumes on EC2 instances</li>
+</ul>
+</li>
+<li>HDD (Hard Disk Drive)
+<ul>
+<li>Designed for workloads requiring a high rate of throughput(MS/s)</li>
+<li>Big Data Processing &amp; logging information</li>
+<li>Larger blocks of Data</li>
+</ul>
+</li>
+<li>General Purpose SSD (GP2)</li>
+<li>Provisioned IOPS(IO1)</li>
+<li>Cold HDD(SC1)</li>
+<li>Throughput Optimized HDD(ST1)</li>
+</ul>
+</li>
+<li>Encryption
+<ul>
+<li>at rest and in transit</li>
+<li>is managed by the EBS service itself</li>
+<li>enabled with a checkbox</li>
+</ul>
+</li>
+<li>Creating:
+<ul>
+<li>Management Console
+<ul>
+<li>During the creation of a new EC2 instance</li>
+<li>As a stand alone EBS Volume</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Changing the size of an EBS Volume</li>
+<li>Pricing</li>
+</ul>
+<h3 id="ec2-instance-storage">EC2 Instance Storage</h3>
+<ul>
+<li>temporary</li>
+<li>not recommended for critical or valuable data</li>
+<li>instance stopped &ndash;&gt; data is lost</li>
+</ul>
+<h1 id="amazon-s3">Amazon S3</h1>
+<p>Amazon S3 is a fully managed, object-based storage service that is highly available, highly durable, very cost-effective, and widely accessible.</p>
+<p>The smallest file size is 0 bytes, the largest file size is 5 terabytes.</p>
+<p>The availability of S3 data objects is dependent on the storage class used and this can range from 99.5% to 99.99%.</p>
+<p>The difference between availability and durability is this: when looking at availability AWS ensures that the uptime of Amazon S3 is between 99.5% to 99.99%, depending on the storage class, to enable you to access your stored data.</p>
+<p>Tuto:</p>
+<ul>
+<li>S3 &ndash;&gt; Create Bucket</li>
+<li>Bucket name: unique name</li>
+<li>Region</li>
+<li>Versioning</li>
+<li>Server access logging</li>
+<li>Permission</li>
+<li>Review</li>
+<li>Create folder</li>
+<li>uploder
+<ul>
+<li>Permission</li>
+<li>Storage class</li>
+</ul>
+</li>
+</ul>
+<p>S3 Storage class:</p>
+<ul>
+<li>S3 Standard
+<ul>
+<li>Lifecycle rule &ndash;&gt; S3 INT</li>
+</ul>
+</li>
+<li>S3 INT</li>
+<li>S3 S-IA</li>
+<li>S3 Z-IA</li>
+<li>S3 Glacier
+<ul>
+<li>Moving Data into S3 Glacier for the 1er time: Create your vaults as a container for your archives &ndash;&gt; Move your data into the Glacier vault using the availabke APIs or SDKs</li>
+<li>APIs, SDKs, CLI</li>
+<li>Retrieval options
+<ul>
+<li>Expediteed: under 250MB, available in 5 mins</li>
+<li>Standard: any size, avalable in 3-5 hours</li>
+<li>Bulk: PB of data at a time 5-12 hours</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>S3 G_DA: the cheapest, minimal access Retrieval within 12 hours</li>
+</ul>
+<h1 id="using-amazon-s3-bucket-properties--management-features-to-maintain-data">Using Amazon S3 Bucket Properties &amp; Management Features to Maintain Data</h1>
+<h2 id="versioning">Versioning</h2>
+<p>This is a bucket feature that allows for multiple versions of the same object to exist. This is useful to allow you to retrieve previous versions of a file, or recover a file should it subjected to accidental deletion, or intended malicious deletion of an object.</p>
+<p>Versioning is managed automatically against objects when you overwrite or delete an object in a bucket that has versioning enabled. To ensure you are always working with the most current version of an object, only the latest version of the object is displayed within the console.</p>
+<p>Versioning is not enabled by default, however, once you have enabled it, you can&rsquo;t disable it. instead, you can only suspend it on the bucket which will prevent any further versions from being created of your objects, but it will keep all existing versions of objects up to the point of suspension.</p>
+<h2 id="server-access-logging">Server-Access Logging</h2>
+<p>when server-access logging is enabled on a bucket it captures details of requests that are made to that bucket and its objects. Logging is important when it comes to security, root-cause cause analysis following incidents, and it can also be required to conform to specific audit and governance certifications.</p>
+<p>Bucket owner - Represents the canonical user ID of the owner of the Source bucket. The canonical user ID is used for cross-account access via bucket policies.</p>
+<p>Bucket - This shows the name of the bucket related to the request.</p>
+<p>Time - This is a timestamp of the request in UTC (Coordinated Universal Time).</p>
+<p>Remote IP Address - Represents the internet address of the identity carrying out the request.</p>
+<p>Requester - For authenticated users, this field will show the IAM identity. For any unauthenticated users a hyphen (-) would be displayed instead.</p>
+<p>Request ID - A random string to identify each request.</p>
+<p>Operation - This will display the operation of the request that was carried out.</p>
+<p>Key - The &ldquo;key&rdquo; part of the request, URL encoded, or if no key parameter is used then a hyphen will be displayed as in this example. A hyphen in any field of the request indicates that the available data was not known or was not applicable for the request.</p>
+<p>Request URI - This represents the Request-URI element of the HTTP request.</p>
+<p>HTTP Status - This displays the HTTP status returned from the request as a numeric value.</p>
+<p>Error Code - If an error was experienced, then S3 will return the error code received.</p>
+<p>Bytes Sent - The number of bytes sent as a response.</p>
+<p>Object Size - The size of the object in question in the request.</p>
+<p>Total Time: - Measured in milliseconds, it represents how long the request took from receiving the request to the last byte of sending a response.</p>
+<p>Turn-Around Time - This shows how long it took S3 to process the request.</p>
+<p>Referer - The value is taken from the HTTP referer header, however, in this case, there was none present and so a hyphen is represented as the value.</p>
+<p>User-Agent - This shows the value taken from the HTTP user-agent header.</p>
+<p>Version ID - If present, this will show the Version ID of the request.</p>
+<p>Host Id - The x-amz-id-2 or Amazon S3 extended request ID. The x-amz-id-2 header is a token that is used together with the x-amz-request-id header to help AWS troubleshoot problems.</p>
+<p>Signature Version - This will show which signature version was used to authenticate the request.</p>
+<p>Cipher Suite - If SSL was used it will show which cipher suite was used. If HTTP was used, then a hyphen would be shown instead.</p>
+<p>Authentication Type - This shows the type of authentication used for the request.</p>
+<p>Host Header - Represents the endpoints used to connect to Amazon S3 in the request.</p>
+<p>TLS Version - This shows which version of TLS was used by the client.</p>
+<h2 id="static-website-hosting">Static Website Hosting</h2>
+<p>S3 endpoint as your website URL address. Firstly, it does not support HTTPS requests. The bucket and its contents must be marked as publicly accessible. And it does not support Requester Pays.</p>
+<p>The other option available to you is Redirect Requests. And this option allows you to redirect all traffic to your website endpoint.</p>
+<ul>
+<li>Block public access</li>
+<li>Bucket Policy</li>
+</ul>
+<h2 id="object-level-logging">Object-Level Logging</h2>
+<p>This feature is actually more closely related to the AWS CloudTrail service than S3 in a way, as it’s AWS CloudTrail that performs logging activities against Amazon S3 data events. These data events are specific API calls used in S3, such as GetObject, DeleteObject, and PutObject.</p>
+<p>So what is CloudTrail? CloudTrail is a service that has a primary function to record and track all AWS API requests made. These API calls can be programmatic requests initiated from a user using an SDK, the AWS command-line interface, from within the AWS management console or even from a request made by another AWS service.</p>
+<p>When an API request is initiated, AWS CloudTrail captures the request as an event and records this event within a log file which is then stored on S3. Each API call represents a new event within the log file. CloudTrail also records and associates other identifying metadata with all the events. For example, the identity of the caller, the timestamp of when the request was initiated and the source IP address.</p>
+<h2 id="default-encryption">Default Encryption</h2>
+<p>Using default encryption, you are able to set a default encryption mechanism for every new object that is uploaded to the bucket. However, please note that for any objects that are already in your bucket prior to enabling default encryption, they will NOT be encrypted.</p>
+<ul>
+<li>AES-256, also known as SSE-S3 which stands for Server-side encryption using S3 managed keys</li>
+<li>AWS-KMS, this is often referred to as SSE-KMS which stands for Server-side encryption using KMS managed keys. KMS is the Key Management Service.</li>
+</ul>
+<h2 id="object-lock">Object Lock</h2>
+<p>This feature is often used to meet a level of compliance known as WORM, meaning Write Once Read Many.. It allows you to offer a level of protection against your objects in your bucket and prevents them from being deleted, either for a set period of time that is defined by you or alternatively prevents it from being deleted until the end of time! The ability to add retention periods using Object Lock help S3 to comply with regulations such as FINRA, the Financial Industry Regulatory Authority.</p>
+<p>These retention modes are Governance Mode and Compliance Mode.</p>
+<p>By enabling Governance Mode it prevents your users from performing a delete or an overwrite of any of the versions of your objects in the bucket throughout the duration set by the retention period. However, if you have very specific permissions, including s3:BypassGovernanceMode, s3:GetObjectLockConfiguration, s3:GetObjectRetention, then a user will still be able to delete an object version within the retention period or change any retention settings set on the bucket.</p>
+<p>When setting Governance Mode you will be asked to add a retention period in days and therefore defines how long the object is protected by object lock preventing it from being deleted. When an object is added to the bucket, a timestamp is added to the metadata reflecting the retention period. When the retention period is over, the object can then be deleted again.</p>
+<h2 id="tags">Tags</h2>
+<p>It is likely when using Amazon S3 that you are using it for a variety of different use cases and solutions, across multiple business units and departments, each with different cost centers. This can make it difficult to manage budgets across your organization. Using bucket tags, known as S3 cost allocation tags, you can assign key-value pairs at the bucket level to help with categorization.</p>
+<p>Using the Cost Explorer from within your AWS Billing and Cost Management, you can report on these Key values, for example, you could identify and highlight the costs associated with your resources that were tagged with Project:CloudAcademy. This will highlight all the AWS resources that had this key value pair allowing you to get a full understanding of the project costs for that particular project, in this case, ‘CloudAcademy’.</p>
+<p>Adding S3 Cost Allocation Tags To add your tags to your bucket, select your bucket and from the Properties tab select Tags Select the tile and configure your tags as required and click save. One point to note is that you must activate your cost allocation tags from within AWS Billing before they will show up on any reports. To do this, go to your AWS Billing and Cost Management dashboard from within the AWS Management Console, select Cost Allocation tags and then activate any user-defined tags that you created.</p>
+<h2 id="transfer-acceleration">Transfer Acceleration</h2>
+<p>When transferring data into or out of Amazon S3 from and to your remote client, or to another AWS region, transfer acceleration can dramatically speed up the process by utilizing another AWS service, Amazon CloudFront.</p>
+<p>Amazon CloudFront is a content delivery network service (CDN), which essentially provides a means of distributing traffic worldwide via edge locations. AWS edge locations are sites deployed in major cities and highly populated areas across the globe. More information on Amazon CloudFront can be found in our existing course here.</p>
+<h2 id="events">Events</h2>
+<p>Any events which are recorded can then be sent to either an SNS Topic, an SQS Queue or a Lambda Function.</p>
+<p>Firstly, you need to give your Event a name, followed by the required events that you want to monitor, as you can see there is quite a long list that can be monitored and captured within your bucket covering new objects, object removals, restores, RRS and replication events.</p>
+<p>The Prefix element allows you to specify the events to be captured based on the objects prefix within the bucket, for example, you could capture all PUT, COPY and POST events for objects with a prefix of Logs/.</p>
+<p>The Suffix provides a similar function of the prefix, it allows you to apply the event captures to objects with a certain suffix, for example all objects with a *.jpg file extension.</p>
+<p>The Send to component determines where your events notifications will be sent, either to an SNS Topic, an SQS Queue or a Lambda Function.</p>
+<p>Depending on the existing configurations of your destination of event notifications, permissions will need to be granted to your SNS Topic, SQS queue or Lambda function to enable S3 to publish events to them.</p>
+<h2 id="requester-pays">Requester Pays</h2>
+<p>A fundamental condition of enabling requester pays is ensuring that all access is authenticated to your bucket, as anonymous access requests will not be able to take advantage of the requester pays attribute. This is because AWS would not know which account to charge the request and data download to. By authenticating requests, it allows a trace back to the identity and to which AWS account that identity is originating from, and the cost is then transferred to that account.</p>
+
+
+  <footer>
+  
+<nav class="post-nav">
+  <span class="nav-prev"></span>
+  <span class="nav-next"></span>
+</nav>
+<script type="text/javascript">
+document.addEventListener('keyup', function(e) {
+  if (e.target.nodeName.toUpperCase() != 'BODY') return;
+  var url = false;
+  if (e.which == 37) {  
+    
+  } else if (e.which == 39) {  
+    
+  }
+  if (url) window.location = url;
+});
+</script>
+
+
+
+<section class="comments">
+  <div id="disqus_thread"></div>
+  <script>
+  var disqus_config = function () {
+  
+  };
+  (function() {
+    var inIFrame = function() {
+      var iframe = true;
+      try { iframe = window.self !== window.top; } catch (e) {}
+      return iframe;
+    };
+    if (inIFrame()) return;
+    var disqus_js = '//hulu.disqus.com/embed.js';
+    var d = document, s = d.createElement('script');
+    s.src = disqus_js; s.async = true;
+    s.setAttribute('data-timestamp', +new Date());
+    var t = d.getElementById('disqus_thread');
+    var b = false, l = function(scroll) {
+      if (b) return;
+      (d.head || d.body).appendChild(s); b = true;
+      if (scroll) t.scrollIntoView();
+    }
+    s.onerror = function(e) {
+      if (sessionStorage.getItem('failure-note')) return;
+      t.innerText = 'Sorry, but you cannot make comments because Disqus failed to load for some reason. It is known to be blocked in China. If you are sure it is not blocked in your region, please refresh the page. 中国大陆地区读者需要翻墙才能发表评论。';
+      t.style.border = '1px dashed';
+      t.style.padding = '.5em';
+      t.style.background = 'lightyellow';
+      sessionStorage.setItem('failure-note', true);
+    };
+    
+    if (location.hash.match(/^#comment-[0-9]+$/)) return l(true);
+    var c = function() {
+      if (b) return;
+      var rect = t.getBoundingClientRect();
+      if (rect.top < window.innerHeight && rect.bottom >= 0) l();
+    };
+    window.addEventListener('load', c);
+    d.addEventListener('scroll', c);
+  })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</section>
+
+
+
+
+<script async src="/blog/js/fix-toc.js"></script>
+
+<script async src="/blog/js/center-img.js"></script>
+
+<script async src="/blog/js/right-quote.js"></script>
+
+<script async src="/blog/js/no-highlight.js"></script>
+
+<script async src="/blog/js/fix-footnote.js"></script>
+
+<script async src="/blog/js/math-code.js"></script>
+
+<script async src="/blog/js/external-link.js"></script>
+
+<script async src="/blog/js/alt-title.js"></script>
+
+<script async src="/blog/js/header-link.js"></script>
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-1988641-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-1988641-2');
+</script>
+
+  
+
+  
+  <hr>
+  <div class="copyright">© <a href="/">Qian SUN</a> 2020</div>
+  
+  </footer>
+  </article>
+  
+  </body>
+</html>
+
