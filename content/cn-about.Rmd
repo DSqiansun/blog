@@ -57,11 +57,6 @@ citis <-data.frame(  "Lat" = c(38.910726, 31.811226,38.416663, 39.9042, 48.00611
   "years" = c(8, 5, 3, 3,  0.5, 3, 0.5, 3, 1, 0.5,as.numeric(format(Sys.Date(), "%Y")) - 2017)
 )
 
-
-```
-
-
-```{r, layout="l-screen-inset shaded"}
 #create some colors
 factpal <- colorFactor(topo.colors(30), a$id)
 
@@ -95,6 +90,8 @@ for (path in pathList)
 #show output
 lf
 ```
+
+
 
 &nbsp;
 <hr />
