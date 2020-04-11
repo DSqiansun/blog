@@ -114,3 +114,17 @@ The availability of S3 data objects is dependent on the storage class used and t
 
 The difference between availability and durability is this: when looking at availability AWS ensures that the uptime of Amazon S3 is between 99.5% to 99.99%, depending on the storage class, to enable you to access your stored data. 
 
+Tuto:
+
+  * S3 --> Create Bucket 
+  * Bucket name: unique name
+  * Region
+  * Versioning
+  * Server access logging
+  * Permission
+  * Review
+  * Create folder 
+  * uploder
+    * Permission 
+    * Storage class
+    
