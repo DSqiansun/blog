@@ -103,3 +103,14 @@ categories:
 - temporary
 - not recommended for critical or valuable data
 - instance stopped --> data is lost
+
+
+# Amazon S3
+Amazon S3 is a fully managed, object-based storage service that is highly available, highly durable, very cost-effective, and widely accessible.
+
+The smallest file size is 0 bytes, the largest file size is 5 terabytes.
+
+The availability of S3 data objects is dependent on the storage class used and this can range from 99.5% to 99.99%.
+
+The difference between availability and durability is this: when looking at availability AWS ensures that the uptime of Amazon S3 is between 99.5% to 99.99%, depending on the storage class, to enable you to access your stored data. 
+
