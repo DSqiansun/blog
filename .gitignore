@@ -7,3 +7,4 @@ static/figures
 blogdown
 LICENSE
 R
+content/**html

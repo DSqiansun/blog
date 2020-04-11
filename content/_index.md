@@ -14,7 +14,7 @@ I'm a Data Scientist working at [Allianz](https://www.allianz.fr/).
 
 这是孙潜的个人主页。
 
-
+> 知易行难，行者无疆
 
 
 <script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?d=779flWER9ePBEmCwSBGmsNamIlYtGiksN8lzyiGWfGA&cl=ffffff&w=a"></script>
