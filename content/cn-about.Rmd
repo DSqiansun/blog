@@ -5,7 +5,7 @@ slug: "cn/about"
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE) 
-pacman::p_load(radix, rmarkdown, leaflet, geosphere, htmltools, distill)
+pacman::p_load(rmarkdown, leaflet, geosphere, htmltools, distill, webshot, formatR)
 
 ```
 
