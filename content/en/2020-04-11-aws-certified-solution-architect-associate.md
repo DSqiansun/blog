@@ -127,4 +127,11 @@ Tuto:
   * uploder
     * Permission 
     * Storage class
-    
+
+S3 Storage class:
+
+  * S3 Standard   
+    * Lifecycle rule --> S3 INT
+  * S3 INT   
+  * S3 S-IA  
+  * S3 Z-IA   
