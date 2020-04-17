@@ -31,60 +31,6 @@ slug: "cn/about"
 
 尽量记录自己的学习成长经历。
 
-# 生活履历
-
-
-```{r echo=FALSE, eval=T}
-a = data.frame(
-  "Entry_Station_Lat" = c(38.910726, 31.811226,38.416663, 39.9042, 48.00611, 48.390394, 45.764043, 48.390394 ,45.188529,43.610769 ),
-  "Entry_Station_Long" = c(111.846905, 119.974061, 112.734174, 116.407396, 0.199556, -4.486076, 4.835659, -4.486076, 5.724524,3.876716),
-  "Exit_Station_Lat" = c(31.811226,38.416663, 39.9042, 48.00611, 48.390394, 45.764043, 48.390394,45.188529 ,43.610769,48.856614  ),
-  "Exit_Station_Long" = c(119.974061, 112.734174, 116.407396, 0.199556, -4.486076, 4.835659, -4.486076, 5.724524, 3.876716,2.352222),
-  "Exit_Station_city" = c("常州", "忻州", "北京",  "勒芒", "布雷斯特", "里昂", "布雷斯特", "格勒诺布尔", "蒙彼利埃","巴黎")
-)
-a[["id"]] <- 1:nrow(a)
-
-
-citis <-data.frame(  "Lat" = c(38.910726, 31.811226,38.416663, 39.9042, 48.00611, 48.390394, 45.764043, 48.390394,45.188529 ,43.610769,48.856614  ),
-  "Long" = c(111.846905,119.974061, 112.734174, 116.407396, 0.199556, -4.486076, 4.835659, -4.486076, 5.724524, 3.876716,2.352222),
-  "city" = c("五寨", "常州", "忻州", "北京",  "勒芒", "布雷斯特", "里昂", "布雷斯特", "格勒诺布尔", "蒙彼利埃","巴黎"),
-  "years" = c(8, 5, 3, 3,  0.5, 3, 0.5, 3, 1, 0.5,as.numeric(format(Sys.Date(), "%Y")) - 2017)
-)
-
-#create some colors
-factpal <- colorFactor(topo.colors(30), a$id)
-
-#create a list of interpolated paths
-pathList = NULL
-for(i in 1:nrow(a))
-{
-tmp = gcIntermediate(c(a$Entry_Station_Long[i],
-                 a$Entry_Station_Lat[i]),
-               c(a$Exit_Station_Long[i],
-                 a$Exit_Station_Lat[i]),n = 25,
-               addStartEnd=TRUE)
-tmp = data.frame(tmp)
-tmp$id = a[i,]$id
-tmp$color = factpal(a[i,]$id)
-pathList = c(pathList,list(tmp))
-}
-
-#create empty base leaflet object
-leaflet(width ="100%") %>% addTiles() %>% setView(2.352222,48.856614, zoom =5) %>% addMarkers(lng=citis$Long,lat=citis$Lat,  popup = htmlEscape(citis$city)) %>% addCircleMarkers(lng=citis$Long,lat=citis$Lat, radius =citis$years*10, stroke = FALSE, fillOpacity = 0.5) -> lf
-
-#add each entry of pathlist to the leaflet object 
-for (path in pathList)
-{
-  lf %>% addPolylines(data = path,
-                      lng = ~lon, 
-                      lat = ~lat,
-                      color = ~color) -> lf
-
-}
-#show output
-lf
-```
-
 
 
 &nbsp;
