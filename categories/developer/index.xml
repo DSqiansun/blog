@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Developer on Qian SUN | 孙潜</title>
+    <link>https://dsqiansun.github.io/blog/categories/developer/</link>
+    <description>Recent content in Developer on Qian SUN | 孙潜</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 12 Apr 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://dsqiansun.github.io/blog/categories/developer/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Vue Todo List</title>
+      <link>https://dsqiansun.github.io/blog/cn/2020/04/vue-todo-list/</link>
+      <pubDate>Sun, 12 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://dsqiansun.github.io/blog/cn/2020/04/vue-todo-list/</guid>
+      <description>todolist功能开发 &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html lang=&amp;quot;en&amp;quot;&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;quot;UTF-8&amp;quot;&amp;gt; &amp;lt;title&amp;gt;Vue 101&amp;lt;/title&amp;gt; &amp;lt;script src=&amp;quot;./vue.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;div id=&amp;quot;root&amp;quot;&amp;gt; &amp;lt;div&amp;gt; &amp;lt;input v-model=&amp;quot;inputValue&amp;quot;/&amp;gt; &amp;lt;button @click=&amp;quot;handleSubmit&amp;quot;&amp;gt;submit&amp;lt;/button&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;ul&amp;gt; &amp;lt;li v-for=&amp;quot;(item, index) of list&amp;quot; :key=&amp;quot;index&amp;quot;&amp;gt; {{item}} &amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;script&amp;gt; new Vue({ el: &amp;quot;#root&amp;quot;, data: { inputValue: &#39;hello&#39;, list: [] }, methods: { handleSubmit: function () { this.list.push(this.inputValue) this.inputValue = &#39;&#39; } } }) &amp;lt;/script&amp;gt;</description>
+    </item>
+    
+    <item>
+      <title>Certified Developer – Associate Certification Preparation for AWS</title>
+      <link>https://dsqiansun.github.io/blog/cn/2020/04/certified-developer-associate-certification-preparation-for-aws/</link>
+      <pubDate>Sat, 11 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://dsqiansun.github.io/blog/cn/2020/04/certified-developer-associate-certification-preparation-for-aws/</guid>
+      <description>AWS: Overview of AWS Identity &amp;amp; Access Management (IAM) </description>
+    </item>
+    
+  </channel>
+</rss>

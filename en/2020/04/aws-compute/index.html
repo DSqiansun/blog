@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <title>关于 - Qian SUN | 孙潜</title>
-    <meta property="og:title" content="关于 - Qian SUN | 孙潜">
+    <title>AWS Compute - Qian SUN | 孙潜</title>
+    <meta property="og:title" content="AWS Compute - Qian SUN | 孙潜">
     
     <meta name="twitter:card" content="summary">
 
@@ -15,16 +15,8 @@
 
     
       
-      <meta property="description" content="我是孙潜。 去过很多地方，遇到过很多人，做过很多工作。
-喜欢学习新的东西，认识新的朋友，即使不是很擅长社交。
-[&amp;hellip;] 目前是一名数据科学家兼程序员在法国安联保险公司。
-在此之前，在ENGIE(前苏伊士环能), IBM, CNRS（法国国家科学研究院）工作过，而后在Meritis做过咨询,再之后加入过创业公司Amuse Network。
-[&amp;hellip;] 法国国立高等先进技术学 &amp;hellip;">
-      <meta property="og:description" content="我是孙潜。 去过很多地方，遇到过很多人，做过很多工作。
-喜欢学习新的东西，认识新的朋友，即使不是很擅长社交。
-[&amp;hellip;] 目前是一名数据科学家兼程序员在法国安联保险公司。
-在此之前，在ENGIE(前苏伊士环能), IBM, CNRS（法国国家科学研究院）工作过，而后在Meritis做过咨询,再之后加入过创业公司Amuse Network。
-[&amp;hellip;] 法国国立高等先进技术学 &amp;hellip;">
+      <meta property="description" content="EC2 is arguably the first compute service that you will encounter when working with AWS. It allows you to deploy virtual servers within your AWS environment and most people will require an EC2 &amp;hellip;">
+      <meta property="og:description" content="EC2 is arguably the first compute service that you will encounter when working with AWS. It allows you to deploy virtual servers within your AWS environment and most people will require an EC2 &amp;hellip;">
       
     
 
@@ -60,7 +52,7 @@
   
   <li><a href="/blog/en/">Blog</a></li>
   
-  <li class="active"><a href="/blog/cn/about/">关于</a></li>
+  <li><a href="/blog/cn/about/">关于</a></li>
   
   <li><a href="/blog/cn/">日志</a></li>
   
@@ -68,6 +60,8 @@
 
 <li class="menu-extra"></li>
 
+
+<li><a href="/en/index.xml" type="application/rss+xml" title="RSS feed">Subscribe</a></li>
 
 <li><a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="Attribution-NonCommercial-ShareAlike 4.0 International">License</a></li>
 
@@ -80,11 +74,11 @@
     <article class="main">
       <header class="title">
       
-<h1>关于</h1>
+<h1>AWS Compute</h1>
 
 
-<h3>
-</h3>
+<h3>Qian SUN / 
+2020-04-11</h3>
 
 <hr>
 
@@ -93,33 +87,42 @@
 
 
 
-<h1 id="我是谁">我是谁</h1>
-<p>我是孙潜。
-去过很多地方，遇到过很多人，做过很多工作。<br>
-喜欢学习新的东西，认识新的朋友，即使不是很擅长社交。</p>
-<h1 id="履历">履历</h1>
-<p>目前是一名数据科学家兼程序员在法国安联保险公司。</p>
-<p>在此之前，在ENGIE(前苏伊士环能), IBM, CNRS（法国国家科学研究院）工作过，而后在Meritis做过咨询,再之后加入过创业公司Amuse Network。</p>
-<h1 id="学历">学历</h1>
-<p>法国国立高等先进技术学院（ENSTA Bretagne) 通用工程师硕士文凭<br>
-西布列塔尼大学(Université de Bretagne Occidentale)地球物理硕士文凭<br>
-格勒诺布尔阿尔卑斯大学 (Grenoble Alpes University)和格勒诺布尔国立高等计算机与应用数学学校(Ensimag)数据科学硕士文凭。</p>
-<p>曾经在<a href="http://www.xdfce.cn/">北京新东方烹饪学习中炒专业</a>求学，并取得证书</p>
-<h1 id="个人兴趣">个人兴趣</h1>
-<p>喜欢Python, R, 科学计算, 高性能计算, 大数据，人工智能<br>
-喜欢学习新的东西，新的技术。</p>
-<h1 id="写作原则">写作原则</h1>
-<p>尽量记录自己的学习成长经历。</p>
-<p> </p>
-<hr />
-<p style="text-align: center;">Contact</a></p>
-<p style="text-align: center;"><span style="color: #808080;"><em>sunqianben@gmail.com</em></span></p>
-<center>[Github](https://github.com/DSqiansun) | [Linkedin](https://www.linkedin.com/in/qian-sun-411829a9)</center>
-<p> </p>
+<h1 id="amazon-ec2">Amazon EC2</h1>
+<p>EC2 is arguably the first compute service that you will encounter when working with AWS. It allows you to deploy virtual servers within your AWS environment and most people will require an EC2 instance within their environment as a part of at least one of their solutions. There are a number of elements in creating your EC2 instance, which I want to break down and explain.</p>
+<p>AMIs, Amazon Machine Images. These are essentially templates of pre-configured EC2 instances which allow you to quickly launch a new EC2 instance based on the configuration within the AMI.</p>
+<h2 id="types">types:</h2>
+<ul>
+<li>On-Demand instances</li>
+<li>Reserved instances</li>
+<li>Scheduled instances</li>
+<li>Spot instances</li>
+<li>On-Demand Capacity Reservations</li>
+</ul>
 
 
   <footer>
   
+<nav class="post-nav">
+  <span class="nav-prev">&larr; <a href="/blog/en/2020/04/aws-developer-services-for-ci-cd/">AWS Developer Services for CI/CD</a></span>
+  <span class="nav-next"><a href="/blog/en/2020/04/aws-certified-solution-architect-associate/">Aws Certified Solution Architect Associate</a> &rarr;</span>
+</nav>
+<script type="text/javascript">
+document.addEventListener('keyup', function(e) {
+  if (e.target.nodeName.toUpperCase() != 'BODY') return;
+  var url = false;
+  if (e.which == 37) {  
+    
+    url = '\/blog\/en\/2020\/04\/aws-developer-services-for-ci-cd\/';
+    
+  } else if (e.which == 39) {  
+    
+    url = '\/blog\/en\/2020\/04\/aws-certified-solution-architect-associate\/';
+    
+  }
+  if (url) window.location = url;
+});
+</script>
+
 
 
 <section class="comments">

@@ -109,56 +109,7 @@ Address: 560 S 183rd Ave, Elkhorn, NE 68022
 喜欢学习新的东西，新的技术。&lt;/p&gt;
 &lt;h1 id=&#34;写作原则&#34;&gt;写作原则&lt;/h1&gt;
 &lt;p&gt;尽量记录自己的学习成长经历。&lt;/p&gt;
-&lt;h1 id=&#34;生活履历&#34;&gt;生活履历&lt;/h1&gt;
-&lt;pre&gt;&lt;code class=&#34;language-{r&#34; data-lang=&#34;{r&#34;&gt;a = data.frame(
-  &amp;quot;Entry_Station_Lat&amp;quot; = c(38.910726, 31.811226,38.416663, 39.9042, 48.00611, 48.390394, 45.764043, 48.390394 ,45.188529,43.610769 ),
-  &amp;quot;Entry_Station_Long&amp;quot; = c(111.846905, 119.974061, 112.734174, 116.407396, 0.199556, -4.486076, 4.835659, -4.486076, 5.724524,3.876716),
-  &amp;quot;Exit_Station_Lat&amp;quot; = c(31.811226,38.416663, 39.9042, 48.00611, 48.390394, 45.764043, 48.390394,45.188529 ,43.610769,48.856614  ),
-  &amp;quot;Exit_Station_Long&amp;quot; = c(119.974061, 112.734174, 116.407396, 0.199556, -4.486076, 4.835659, -4.486076, 5.724524, 3.876716,2.352222),
-  &amp;quot;Exit_Station_city&amp;quot; = c(&amp;quot;常州&amp;quot;, &amp;quot;忻州&amp;quot;, &amp;quot;北京&amp;quot;,  &amp;quot;勒芒&amp;quot;, &amp;quot;布雷斯特&amp;quot;, &amp;quot;里昂&amp;quot;, &amp;quot;布雷斯特&amp;quot;, &amp;quot;格勒诺布尔&amp;quot;, &amp;quot;蒙彼利埃&amp;quot;,&amp;quot;巴黎&amp;quot;)
-)
-a[[&amp;quot;id&amp;quot;]] &amp;lt;- 1:nrow(a)
-
-
-citis &amp;lt;-data.frame(  &amp;quot;Lat&amp;quot; = c(38.910726, 31.811226,38.416663, 39.9042, 48.00611, 48.390394, 45.764043, 48.390394,45.188529 ,43.610769,48.856614  ),
-  &amp;quot;Long&amp;quot; = c(111.846905,119.974061, 112.734174, 116.407396, 0.199556, -4.486076, 4.835659, -4.486076, 5.724524, 3.876716,2.352222),
-  &amp;quot;city&amp;quot; = c(&amp;quot;五寨&amp;quot;, &amp;quot;常州&amp;quot;, &amp;quot;忻州&amp;quot;, &amp;quot;北京&amp;quot;,  &amp;quot;勒芒&amp;quot;, &amp;quot;布雷斯特&amp;quot;, &amp;quot;里昂&amp;quot;, &amp;quot;布雷斯特&amp;quot;, &amp;quot;格勒诺布尔&amp;quot;, &amp;quot;蒙彼利埃&amp;quot;,&amp;quot;巴黎&amp;quot;),
-  &amp;quot;years&amp;quot; = c(8, 5, 3, 3,  0.5, 3, 0.5, 3, 1, 0.5,as.numeric(format(Sys.Date(), &amp;quot;%Y&amp;quot;)) - 2017)
-)
-
-#create some colors
-factpal &amp;lt;- colorFactor(topo.colors(30), a$id)
-
-#create a list of interpolated paths
-pathList = NULL
-for(i in 1:nrow(a))
-{
-tmp = gcIntermediate(c(a$Entry_Station_Long[i],
-                 a$Entry_Station_Lat[i]),
-               c(a$Exit_Station_Long[i],
-                 a$Exit_Station_Lat[i]),n = 25,
-               addStartEnd=TRUE)
-tmp = data.frame(tmp)
-tmp$id = a[i,]$id
-tmp$color = factpal(a[i,]$id)
-pathList = c(pathList,list(tmp))
-}
-
-#create empty base leaflet object
-leaflet(width =&amp;quot;100%&amp;quot;) %&amp;gt;% addTiles() %&amp;gt;% setView(2.352222,48.856614, zoom =5) %&amp;gt;% addMarkers(lng=citis$Long,lat=citis$Lat,  popup = htmlEscape(citis$city)) %&amp;gt;% addCircleMarkers(lng=citis$Long,lat=citis$Lat, radius =citis$years*10, stroke = FALSE, fillOpacity = 0.5) -&amp;gt; lf
-
-#add each entry of pathlist to the leaflet object 
-for (path in pathList)
-{
-  lf %&amp;gt;% addPolylines(data = path,
-                      lng = ~lon, 
-                      lat = ~lat,
-                      color = ~color) -&amp;gt; lf
-
-}
-#show output
-lf
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt; &lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
 &lt;hr /&gt;
 &lt;p style=&#34;text-align: center;&#34;&gt;Contact&lt;/a&gt;&lt;/p&gt;
 &lt;p style=&#34;text-align: center;&#34;&gt;&lt;span style=&#34;color: #808080;&#34;&gt;&lt;em&gt;sunqianben@gmail.com&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;

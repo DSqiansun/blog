@@ -3,6 +3,46 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://dsqiansun.github.io/blog/categories/assurance/</loc>
+    <lastmod>2020-04-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dsqiansun.github.io/blog/categories/</loc>
+    <lastmod>2020-04-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dsqiansun.github.io/blog/cn/2020/04/d%C3%A9finitions-de-l-assurance/</loc>
+    <lastmod>2020-04-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dsqiansun.github.io/blog/categories/developer/</loc>
+    <lastmod>2020-04-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dsqiansun.github.io/blog/categories/frontend/</loc>
+    <lastmod>2020-04-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dsqiansun.github.io/blog/cn/2020/04/vue-todo-list/</loc>
+    <lastmod>2020-04-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dsqiansun.github.io/blog/cn/2020/04/vue-cli/</loc>
+    <lastmod>2020-04-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dsqiansun.github.io/blog/categories/vuejs/</loc>
+    <lastmod>2020-04-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://dsqiansun.github.io/blog/categories/aws/</loc>
     <lastmod>2020-04-11T00:00:00+00:00</lastmod>
   </url>
@@ -13,12 +53,37 @@
   </url>
   
   <url>
-    <loc>https://dsqiansun.github.io/blog/categories/</loc>
+    <loc>https://dsqiansun.github.io/blog/en/2020/04/aws-compute/</loc>
+    <lastmod>2020-04-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dsqiansun.github.io/blog/en/2020/04/aws-developer-services-for-ci-cd/</loc>
+    <lastmod>2020-04-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dsqiansun.github.io/blog/en/2020/04/aws-storage/</loc>
     <lastmod>2020-04-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://dsqiansun.github.io/blog/categories/certification/</loc>
+    <lastmod>2020-04-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dsqiansun.github.io/blog/cn/2020/04/certified-developer-associate-certification-preparation-for-aws/</loc>
+    <lastmod>2020-04-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dsqiansun.github.io/blog/categories/data-engineering/</loc>
+    <lastmod>2020-04-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dsqiansun.github.io/blog/cn/2020/04/vuejs-2-5/</loc>
     <lastmod>2020-04-11T00:00:00+00:00</lastmod>
   </url>
   
@@ -29,11 +94,6 @@
   
   <url>
     <loc>https://dsqiansun.github.io/blog/tags/data-engineering/</loc>
-    <lastmod>2020-03-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dsqiansun.github.io/blog/categories/data-engineering/</loc>
     <lastmod>2020-03-29T00:00:00+00:00</lastmod>
   </url>
   
@@ -94,6 +154,10 @@
   
   <url>
     <loc>https://dsqiansun.github.io/blog/en/about/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dsqiansun.github.io/blog/categories/ci/cd/</loc>
   </url>
   
   <url>

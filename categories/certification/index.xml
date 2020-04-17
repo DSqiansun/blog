@@ -20,5 +20,34 @@
       <description>考试范围: Domain 1 : Design Resilient Architecteures AWS Global Infrastructure (Regions, Availavility Zone, Edge Locations, Regional Edge Caches) Multi-tiered architecture within a Virtual Private Cloud (VPC) Amazon Route 53 Amazon CloudFront Disaster recovery and business continuity strategies Decoupled and event-driven architectures AWS storage services Domain 2 : Design High-Performing Architectures Auto Scaling and application and network elastic load balancers Amazon EC2, ECS and Elastic Beanstalk Storage</description>
     </item>
     
+    <item>
+      <title>AWS Compute</title>
+      <link>https://dsqiansun.github.io/blog/en/2020/04/aws-compute/</link>
+      <pubDate>Sat, 11 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://dsqiansun.github.io/blog/en/2020/04/aws-compute/</guid>
+      <description>Amazon EC2 EC2 is arguably the first compute service that you will encounter when working with AWS. It allows you to deploy virtual servers within your AWS environment and most people will require an EC2 instance within their environment as a part of at least one of their solutions. There are a number of elements in creating your EC2 instance, which I want to break down and explain.
+AMIs, Amazon Machine Images.</description>
+    </item>
+    
+    <item>
+      <title>AWS Storage</title>
+      <link>https://dsqiansun.github.io/blog/en/2020/04/aws-storage/</link>
+      <pubDate>Sat, 11 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://dsqiansun.github.io/blog/en/2020/04/aws-storage/</guid>
+      <description>Introduction to Amazon EBS and EC2 Instance Storage AWS Storage Services on-premise storage options  Storage Areas Network(SAN) Network Attached Storage(NAS) Directly Attached Storage(DAS) Tape Backup  AWS Data Storage categorization   Block Storage:
+ Data is stored in chunks known as blocks Blocks are stored on a volume and attached to a signle instance Provide very low latency Comparable to DAS storage used on premises    File Storage</description>
+    </item>
+    
+    <item>
+      <title>Certified Developer – Associate Certification Preparation for AWS</title>
+      <link>https://dsqiansun.github.io/blog/cn/2020/04/certified-developer-associate-certification-preparation-for-aws/</link>
+      <pubDate>Sat, 11 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://dsqiansun.github.io/blog/cn/2020/04/certified-developer-associate-certification-preparation-for-aws/</guid>
+      <description>AWS: Overview of AWS Identity &amp;amp; Access Management (IAM) </description>
+    </item>
+    
   </channel>
 </rss>

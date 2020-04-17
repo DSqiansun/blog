@@ -1,25 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>中文日志 on Qian SUN | 孙潜</title>
-    <link>https://dsqiansun.github.io/blog/cn/</link>
-    <description>Recent content in 中文日志 on Qian SUN | 孙潜</description>
+    <title>frontend on Qian SUN | 孙潜</title>
+    <link>https://dsqiansun.github.io/blog/categories/frontend/</link>
+    <description>Recent content in frontend on Qian SUN | 孙潜</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 28 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 12 Apr 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://dsqiansun.github.io/blog/cn/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://dsqiansun.github.io/blog/categories/frontend/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Définitions de l&#39;assurance</title>
-      <link>https://dsqiansun.github.io/blog/cn/2020/04/d%C3%A9finitions-de-l-assurance/</link>
-      <pubDate>Fri, 17 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://dsqiansun.github.io/blog/cn/2020/04/d%C3%A9finitions-de-l-assurance/</guid>
-      <description>L&amp;rsquo;assurance L&amp;rsquo;assurance est une mise en commun de moyens pour faire face à des risques s&amp;rsquo;ils se réalisent.
-Le principe de l&amp;rsquo;assurance part en effet de la mutualisation. L&amp;rsquo;assurance, c&amp;rsquo;est un groupe de personnes qui met son argent en commun afin de pouvoir fournir une prestation en cas de pépin. L&amp;rsquo;assurance comporte une part importante de prévisions statistique. Une assurance se paie d&amp;rsquo;abord pour être protégé ensuite si le risque prévu au contrat de réalise.</description>
-    </item>
     
     <item>
       <title>Vue Todo List</title>
@@ -40,39 +30,12 @@ Le principe de l&amp;rsquo;assurance part en effet de la mutualisation. L&amp;rs
     </item>
     
     <item>
-      <title>Certified Developer – Associate Certification Preparation for AWS</title>
-      <link>https://dsqiansun.github.io/blog/cn/2020/04/certified-developer-associate-certification-preparation-for-aws/</link>
-      <pubDate>Sat, 11 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://dsqiansun.github.io/blog/cn/2020/04/certified-developer-associate-certification-preparation-for-aws/</guid>
-      <description>AWS: Overview of AWS Identity &amp;amp; Access Management (IAM) </description>
-    </item>
-    
-    <item>
       <title>Vuejs 2.5 入门</title>
       <link>https://dsqiansun.github.io/blog/cn/2020/04/vuejs-2-5/</link>
       <pubDate>Sat, 11 Apr 2020 00:00:00 +0000</pubDate>
       
       <guid>https://dsqiansun.github.io/blog/cn/2020/04/vuejs-2-5/</guid>
       <description>创建第一个vue实例 &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html lang=&amp;quot;en&amp;quot;&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;quot;UTF-8&amp;quot;&amp;gt; &amp;lt;title&amp;gt;Vue 101&amp;lt;/title&amp;gt; &amp;lt;script src = &amp;quot;./vue.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;div id=&amp;quot;root&amp;quot;&amp;gt;{{msg}}&amp;lt;/div&amp;gt; &amp;lt;script&amp;gt; new Vue({ el: &amp;quot;#root&amp;quot;, data: { msg: &amp;quot;hello world&amp;quot; } }) &amp;lt;/script&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt; 挂载点，模板与实例 &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html lang=&amp;quot;en&amp;quot;&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;quot;UTF-8&amp;quot;&amp;gt; &amp;lt;title&amp;gt;Vue 101&amp;lt;/title&amp;gt; &amp;lt;script src = &amp;quot;./vue.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;!-- &amp;lt</description>
-    </item>
-    
-    <item>
-      <title>Data Keywords</title>
-      <link>https://dsqiansun.github.io/blog/cn/2020/03/data-keywords/</link>
-      <pubDate>Sun, 29 Mar 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://dsqiansun.github.io/blog/cn/2020/03/data-keywords/</guid>
-      <description>这章主要目的是解释一些行业内专用词 S 商务智能 BI 商务智能（BI，Business Intelligence）是一种以提供决策分析性的运营数据为目</description>
-    </item>
-    
-    <item>
-      <title>Data Pipeline - ETL vs ELT</title>
-      <link>https://dsqiansun.github.io/blog/cn/2020/03/data-pipeline-etl/</link>
-      <pubDate>Sun, 29 Mar 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://dsqiansun.github.io/blog/cn/2020/03/data-pipeline-etl/</guid>
-      <description>介绍 ETL，Extraction-Transformation-Loading的缩写，中文名为数据抽取、转换和加载。 ELT，Extracti</description>
     </item>
     
   </channel>
