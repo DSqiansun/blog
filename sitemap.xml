@@ -3,12 +3,32 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://dsqiansun.github.io/blog/categories/assurance/</loc>
-    <lastmod>2020-04-17T00:00:00+00:00</lastmod>
+    <loc>https://dsqiansun.github.io/blog/categories/aws/</loc>
+    <lastmod>2020-04-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://dsqiansun.github.io/blog/categories/</loc>
+    <lastmod>2020-04-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dsqiansun.github.io/blog/en/2020/04/codecommit/</loc>
+    <lastmod>2020-04-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dsqiansun.github.io/blog/categories/developer/</loc>
+    <lastmod>2020-04-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dsqiansun.github.io/blog/categories/devops/</loc>
+    <lastmod>2020-04-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dsqiansun.github.io/blog/categories/assurance/</loc>
     <lastmod>2020-04-17T00:00:00+00:00</lastmod>
   </url>
   
@@ -18,8 +38,8 @@
   </url>
   
   <url>
-    <loc>https://dsqiansun.github.io/blog/categories/developer/</loc>
-    <lastmod>2020-04-12T00:00:00+00:00</lastmod>
+    <loc>https://dsqiansun.github.io/blog/cn/2020/04/les-origines-de-l-assurance/</loc>
+    <lastmod>2020-04-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -40,11 +60,6 @@
   <url>
     <loc>https://dsqiansun.github.io/blog/categories/vuejs/</loc>
     <lastmod>2020-04-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dsqiansun.github.io/blog/categories/aws/</loc>
-    <lastmod>2020-04-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>

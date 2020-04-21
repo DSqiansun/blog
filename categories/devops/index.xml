@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>devops on Qian SUN | 孙潜</title>
+    <link>https://dsqiansun.github.io/blog/categories/devops/</link>
+    <description>Recent content in devops on Qian SUN | 孙潜</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 21 Apr 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://dsqiansun.github.io/blog/categories/devops/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>CodeCommit</title>
+      <link>https://dsqiansun.github.io/blog/en/2020/04/codecommit/</link>
+      <pubDate>Tue, 21 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://dsqiansun.github.io/blog/en/2020/04/codecommit/</guid>
+      <description>Source code
+steps:</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -6,10 +6,20 @@
     <description>Recent content in aws on Qian SUN | 孙潜</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 11 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 21 Apr 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://dsqiansun.github.io/blog/categories/aws/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>CodeCommit</title>
+      <link>https://dsqiansun.github.io/blog/en/2020/04/codecommit/</link>
+      <pubDate>Tue, 21 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://dsqiansun.github.io/blog/en/2020/04/codecommit/</guid>
+      <description>Source code
+steps:</description>
+    </item>
     
     <item>
       <title>Aws Certified Solution Architect Associate</title>
