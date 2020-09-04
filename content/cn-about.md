@@ -5,7 +5,7 @@ slug: "cn/about"
 
 
 # 我是谁
-<center>我是孙潜。去过很多地方，遇到过很多人，做过很多工作。</center>   
+<p style="text-align: center;"我是孙潜。去过很多地方，遇到过很多人，做过很多工作。</a></p>
 <center>喜欢学习新的东西，认识新的朋友，即使不是很擅长社交。</center>
 
 # 履历
