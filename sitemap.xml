@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://dsqiansun.github.io/blog/</loc>
+    <lastmod>2020-04-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://dsqiansun.github.io/blog/categories/aws/</loc>
     <lastmod>2020-04-21T00:00:00+00:00</lastmod>
   </url>
@@ -145,11 +150,6 @@
   <url>
     <loc>https://dsqiansun.github.io/blog/tags/workflow/</loc>
     <lastmod>2020-03-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dsqiansun.github.io/blog/</loc>
-    <lastmod>2020-03-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
