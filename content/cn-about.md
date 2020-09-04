@@ -44,7 +44,8 @@ slug: "cn/about"
 <p style="text-align: center;">Contact</a></p>
 <p style="text-align: center;"><span style="color: #808080;"><em>sunqianben@gmail.com</em></span></p>
 
-<p style="text-align: center;">[Github](https://github.com/DSqiansun) | [Linkedin](https://www.linkedin.com/in/qian-sun-411829a9)</a></p>
+<p style="text-align: center;">[Github](https://github.com/DSqiansun) </a></p> 
+<p style="text-align: center;">[Linkedin](https://www.linkedin.com/in/qian-sun-411829a9)</a></p>
 
 &nbsp;
 
