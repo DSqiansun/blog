@@ -19,7 +19,7 @@ slug: "cn/about"
 <center>西布列塔尼大学(Université de Bretagne Occidentale)地球物理硕士文凭  </center>
 <center>格勒诺布尔阿尔卑斯大学 (Grenoble Alpes University)和格勒诺布尔国立高等计算机与应用数学学校(Ensimag)数据科学硕士文凭。 </center>
 
-<center>曾经在[北京新东方烹饪学习中炒专业](http://www.xdfce.cn/)求学，并取得证书 </center>
+<center>曾经在北京新东方烹饪学习中炒专业求学，并取得证书 </center>
 
 # 个人兴趣
 
@@ -32,6 +32,13 @@ slug: "cn/about"
 
 
 
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
 &nbsp;
 <hr />
 <p style="text-align: center;">Contact</a></p>
