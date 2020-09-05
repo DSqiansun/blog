@@ -1,6 +1,8 @@
 ---
 title: "关于"
 slug: "cn/about"
+disable_mathjax: true
+disable_highlight: true
 ---
 
 
